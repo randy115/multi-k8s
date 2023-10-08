@@ -1,6 +1,6 @@
-docker build -t randyb11595/multi-client:latest -t randyb11595/multi-client:$SHA ./client/Dockerfile ./client
-docker build -t randyb11595/multi-server:latest -t randyb11595/multi-server:$SHA ./server/Dockerfile ./server
-docker built -t randyb11595/multi-worker:latest -t randyb11595/multi-worker:$SHA ./worker/Dockerfile ./worker
+docker build -t randyb11595/multi-client:latest -t randyb11595/multi-client:$SHA -f ./client/Dockerfile ./client
+docker build -t randyb11595/multi-server:latest -t randyb11595/multi-server:$SHA -f ./server/Dockerfile ./server
+docker built -t randyb11595/multi-worker:latest -t randyb11595/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 
 docker push randyb11595/multi-client:latest
 docker push randyb11595/multi-server:latest
